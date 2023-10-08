@@ -1,0 +1,197 @@
+.main {
+    background-color: #e7e8e9;
+    position: fixed;
+    // top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  
+    .section {
+      background-image: url("../../assets/Landing_page.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+  
+      .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding-top: 144px;
+  
+        .welcome {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+  
+          .welcome_text {
+            font-size: 84px;
+            color: #131722;
+            font-family: "Plus Jakarta Sans";
+            font-weight: 700;
+            height: 102px;
+          }
+        }
+  
+        .help_info {
+          color: #71747A;
+          font-size: 16px;
+          font-family: "Inter";
+        }
+      }
+  
+      .menu_actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .cards {
+          display: flex;
+          align-items: center;
+          gap: 53px;
+          padding-top: 16px;
+  
+          .hover_effect_dashboard:hover {
+            border: 1px solid #3351FF;
+            cursor: pointer;
+            background-image: none;
+            background: #FFFFFF;
+          }
+  
+          .hover_effect_orders:hover {
+            border: 1px solid #08BD80;
+            cursor: pointer;
+            background-image: none;
+            background: #FFFFFF;
+          }
+  
+          .hover_effect_shipments:hover {
+            border: 1px solid #FF9706;
+            cursor: pointer;
+            background-image: none;
+            background: #FFFFFF;
+          }
+  
+          .hover_effect_postorder:hover {
+            border: 1px solid #9875FF;
+            cursor: pointer;
+            background-image: none;
+            background: #FFFFFF;
+          }
+  
+          .item {
+            width: 255px;
+            height: 85px;
+            background-image: linear-gradient(to bottom right, #FFFFFF33, #FFFFFFCC);
+            border: 1px solid #FFFFFF3D;
+            border-radius: 8px;
+            padding: 16px 12px 16px 12px;
+  
+            .card_header {
+              padding-top: 23px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+  
+            .card_title {
+              color: #131722;
+              font-size: 20px;
+              font-weight: 600;
+              font-family: "Inter";
+            }
+  
+            .navigate {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+  
+              .side_icon {
+                position: relative;
+                top: 2px;
+              }
+            }
+  
+            .content {
+              color: #42454E;
+              font-family: "Inter";
+              font-weight: 400;
+              font-size: 10px;
+              padding-left: 33px;
+              padding-top: 8px;
+            }
+          }
+        }
+  
+        .quick_actions {
+          color: #131722;
+          font-size: 20px;
+          font-family: "Plus Jakarta Sans";
+          font-weight: bold;
+          height: 25px;
+          padding-top: 108px;
+        }
+      }
+  
+      div.whats_new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .whats_new_sec {
+        max-width: 1126px;
+        padding: 16px 0 0 12px;
+        border: 1px solid #FFFFFF1F;
+        border-radius: 12px;
+        background-image: linear-gradient(to bottom right, #FFFFFF1A, #FFFFFF66);
+        margin-top: 88px;
+        .whats_new_header {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          // .circle {
+          //   height: 14px;
+          //   width: 14px;
+          //   border-radius: 50%;
+          // }
+          .whatnew_title {
+            color: #131722;
+            font-family: "Inter";
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        .content {
+          width: 1126px;
+          .updates_sec {
+            max-height: 64px;
+            overflow-y: auto;
+          }
+          .update_status {
+            font-size: 12px;
+            color: #131722;
+            font-family: "Inter";
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
